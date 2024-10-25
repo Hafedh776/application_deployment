@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: backend-config
+  namespace: my-application
+data:
+  SPRING_POSTGRES_USERNAME: "myapplication"
+  SPRING_POSTGRES_PASSWORD: "M3P@ssw0rd!"
+  SPRING_POSTGRES_URL: "jdbc:postgresql://my-db-test.io:5432/mydatabase"
